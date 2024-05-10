@@ -14,7 +14,14 @@ keysInObject(foods); // => ["apple", "lemon", "mango"]
 
 function keysInObject(obj) {
   // Your code here 
-  console.log('hello');
+  let arr =[];
+  for(let keys in obj){
+    arr.push(keys)
+  }
+  return arr;
+}
+function keysInObject(obj){
+  return Object.keys(obj);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
