@@ -13,6 +13,17 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 
 function arrayConverter(array) {
   // Your code here 
+  let result ={};
+  for(let i = 0 ; i < array.length; i++){
+    let el = array[i];
+    if(result[el]!==undefined){
+      result[el]++
+    }
+    else{
+      result[el]=1
+    }
+  }
+  return result;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

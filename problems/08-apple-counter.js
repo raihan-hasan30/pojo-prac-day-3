@@ -30,7 +30,48 @@ appleCounter(obj3); // => 3
 
 function appleCounter(appleObj) {
   // Your code here 
-}
+  let count = 0
+   let keys = Object.keys(appleObj);
+   keys.filter(key=>{
+   if(key.toLowerCase().includes('apple')){
+      count++
+     }
+   })
+   return count
+    
+   }
+  //  function appleCounter(appleObj) {
+  //   // Your code here 
+  //   let count = 0
+  //   let keys = Object.keys(appleObj)
+  //   let substr = 'apple';
+  //   for(let i = 0 ; i < keys.length; i++){
+  //     if (keys[i].toLowerCase().indexOf(substr) !== -1){
+  //       count++
+  //     }
+  //   }
+  
+  //   return count
+   //}   
+     
+     let obj = { banana: "yay!" };
+     appleCounter(obj); // => 0
+     
+     let obj1 = { crabapple: "yum!" };
+     appleCounter(obj1); // => 1
+     
+     let obj2 = { crabapple: "yum!", honeyapple: "super yum", banana: "yay" };
+     appleCounter(obj2); // => 2
+     
+     
+     let obj3 = {
+       crabApple: "yum!",
+       honeyApple: "super yum",
+       banana: "yay",
+       bigapple: "NYC"
+     };
+     appleCounter(obj3); // => 3
+  
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = appleCounter;

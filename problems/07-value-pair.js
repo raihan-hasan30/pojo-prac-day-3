@@ -10,8 +10,17 @@ valuePair(object1, object2, 'location'); // => [ 'NY', 'SF' ]
 valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 ***********************************************************************/
 
+
 function valuePair(obj1, obj2, key) {
   // Your code here 
+  let result =[];
+if (obj1.hasOwnProperty(key)){
+  result.push(obj1[key])
+}
+if (obj2.hasOwnProperty(key)){
+  result.push(obj2[key])
+}
+  return result
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

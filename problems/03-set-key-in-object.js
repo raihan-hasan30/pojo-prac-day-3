@@ -10,9 +10,14 @@ Examples:
 ***********************************************************************/
 
 function setKeyInObject(obj, string, value) {
-  // Your code here
-  obj[string] = value
-  return obj
+  //obj
+  //string(sceond)
+  //value(third)
+  //return the obj
+  //obj={str: "hello"}
+ 
+  obj[string]=value;
+  return obj;
 }
 
 let obj = {}
